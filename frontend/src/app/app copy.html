@@ -1,0 +1,320 @@
+<div class="dark">
+  <h1 class="bg-pink-200 text-3xl font-bold underline text-center mt-10 stroke-red-700 ">
+    Hello world!
+  </h1>
+
+  <button
+    class="bg-pink-500 py-2 px-4 rounded-full m-4 hover:bg-pink-900 hover:text-white font-semibold hover:transition-colors delay-150 duration-3000">Click
+    me</button>
+
+  <button class="bg-pink-500 py-2 px-4 m-4  hover:text-white font-semibold focus:ring-4">Click me</button>
+
+  <button
+    class="bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-x-1 hover:scale-150 hover:bg-indigo-500">
+    Save Changes
+  </button>
+
+  <button
+    class="bg-violet-500 hover:bg-violet-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700 py-2 px-4 m-4 rounded-full">
+    Save changes
+  </button>
+
+
+
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, perspiciatis assumenda numquam molestiae
+    soluta reprehenderit iure alias voluptas recusandae similique eos aperiam dolore labore <span
+      class="after:absolute after:bg-violet-100 after:h-full after:w-full after:left-0 after:top-0 relative"><span
+        class="relative z-10">veritatis</span></span> velit, magnam, quod illum sunt.</p>
+
+
+
+  <ul class="mt-12">
+    <li class="odd:bg-blue-900 even:bg-pink-300">Html</li>
+    <li class="odd:bg-blue-900 even:bg-pink-300">css</li>
+    <li class="odd:bg-blue-900 even:bg-pink-300">tailwind</li>
+    <li class="odd:bg-blue-900 even:bg-pink-300">bootstarp</li>
+    <li class="odd:bg-blue-900 even:bg-pink-300">anguular</li>
+    <li class="odd:bg-blue-900 even:bg-pink-300">java</li>
+    <li class="odd:bg-blue-900 even:bg-pink-300">javascript</li>
+  </ul>
+
+  <!-- 
+sm	40rem (640px)	@media (width >= 40rem) { ... }
+md	48rem (768px)	@media (width >= 48rem) { ... }
+lg	64rem (1024px)	@media (width >= 64rem) { ... }
+xl	80rem (1280px)	@media (width >= 80rem) { ... }
+2xl	96rem (1536px)	@media (width >= 96rem) { ... } -->
+
+<!-- 
+| Tailwind                | Min Width  | Typical Device               |
+| ----------------------- | ---------- | ---------------------------- |
+| **default (no prefix)** | `< 640px`  | **Mobile**                   |
+| **sm**                  | `≥ 640px`  | Large mobile / small tablet  |
+| **md**                  | `≥ 768px`  | **Tablet**                   |
+| **lg**                  | `≥ 1024px` | **Laptop**                   |
+| **xl**                  | `≥ 1280px` | **Desktop**                  |
+| **2xl**                 | `≥ 1536px` | **Large screens / Monitors** | -->
+
+  <div class="w-32 h-32 mx-auto mt-30
+ bg-red-500 sm:bg-black md:bg-blue-700 lg:bg-green-600 xl:bg-orange-500 2xl:bg-yellow-800
+"></div>
+
+
+  <p class="text-brand-primary">Hello</p>
+</div>
+
+
+
+<!-- hero.component.html -->
+<section class="w-full bg-[#EBECEC]">
+  <div class="relative mx-auto max-w-[1280px] px-4 sm:px-8 min-h-[720px]">
+    <!-- Background circles (behind everything) -->
+    <div class="pointer-events-none absolute inset-0">
+      <!-- Outer ring -->
+      <div
+        class="absolute rounded-full border-2 border-black/[0.05]
+               w-[560px] h-[560px]
+               left-[380px] top-[110px]"
+      ></div>
+
+      <!-- Inner ring -->
+      <div
+        class="absolute rounded-full border-2 border-black/[0.035]
+               w-[360px] h-[360px]
+               left-[500px] top-[230px]"
+      ></div>
+    </div>
+
+    <!-- Content layer -->
+    <div class="relative z-10 grid items-center gap-10 pt-20 lg:grid-cols-12">
+      <!-- Left -->
+      <div class="lg:col-span-4">
+        <p class="text-base text-black/80">The Founder of</p>
+        <!-- Replace below with your logo/text block -->
+        <div class="mt-4 h-[140px] w-[260px] bg-black/5 rounded-xl"></div>
+      </div>
+
+      <!-- Center (person image anchor) -->
+      <div class="lg:col-span-4 relative">
+        <!-- Replace placeholder with the person image -->
+        <div class="mx-auto h-[520px] w-[360px] bg-black/10 rounded-2xl"></div>
+      </div>
+
+      <!-- Right (floating cards area) -->
+      <div class="lg:col-span-4 relative">
+        <!-- Keep empty for now OR add absolute stat cards later -->
+      </div>
+    </div>
+
+    <!-- Example: floating social icons area (bottom-left) -->
+    <div class="absolute left-[120px] bottom-[120px] hidden lg:flex items-center gap-6">
+      <div class="h-14 w-14 rounded-xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.10)]"></div>
+      <div class="h-14 w-14 rounded-xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.10)]"></div>
+      <div class="h-14 w-14 rounded-xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.10)]"></div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="w-full lg:container mx-auto">
+    <div class="relative mx-auto w-full lg:container min-h-180">
+        <div class="absolute inset-0 flex justify-center mt-15">
+            <div class="rounded-full border-l-12 border-t-10 border-[#F3F4F5] w-134 h-134 flex items-center justify-center z-0">
+                <div class="rounded-full border-r-12 border-b-10 border-[#F3F4F5] w-69 h-69 z-0"></div>
+            </div>
+        </div>
+        <div class="absolute inset-0 border-1 border-red-400 px-4 sm:px-8 lg:px-25 pt-5">
+            <!-- Content layer -->
+            <div class="relative z-10 grid grid-cols-12">
+                <!-- Left -->
+                <div class="col-span-12 lg:col-span-4 flex flex-col justify-between max-h-180">
+                    <div></div>
+                    <div class="">
+                        <p class="text-xl">The Founder of</p>
+                        <div class="mt-4 h-[83px] w-[185px]">
+                            <img src="assets/company-logo.png" alt="Company Logo" class="h-full w-full object-contain" />
+                        </div>
+                    </div>
+                    <div></div>
+                    <!-- Example: floating social icons area (bottom-left) -->
+                    <div class="relative lg:flex items-center gap-6">
+                        <div class="h-14 w-14 rounded-xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.10)]"></div>
+                        <div class="h-14 w-14 rounded-xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.10)]"></div>
+                        <div class="h-14 w-14 rounded-xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.10)]"></div>
+                    </div>
+                    <div></div>
+                </div>
+            
+                <!-- Center (person image anchor) -->
+                <div class="col-span-12 lg:col-span-4 flex end">
+                    <div class="h-[868px]">
+                        <img src="assets/founder-cutout.png" alt="Founder" class="h-full w-full object-contain" />
+                    </div>
+                </div>
+            
+                <!-- Right (floating cards area) -->
+                <div class="col-span-12 lg:col-span-4 relative">
+                    <!-- floating cards here -->
+                </div>
+            </div>
+           
+        </div>
+
+
+    </div>
+</section>
+
+
+<section class="w-full lg:container mx-auto">
+    <div class="relative mx-auto w-full lg:container min-h-180">
+        <div class="absolute inset-0 flex justify-center mt-15">
+            <div class="rounded-full border-l-10 border-t-10 border-[#F3F4F5] w-134 h-134 flex items-center justify-center z-0">
+                <div class="rounded-full border-r-10 border-b-10 border-[#F3F4F5] w-69 h-69 z-0"></div>
+            </div>
+        </div>
+        <div class="absolute inset-0 border-red-400 px-4 sm:px-8 lg:px-18 pt-5 z-0">
+            <!-- Content layer -->
+            <div class="relative z-10 flex flex-row">
+                <!-- Left -->
+                <div class="flex lg:basis-1/3 flex-col justify-items-center max-h-180">
+                    <div class="lg:basis-1/2 flex flex-col justify-center px-7">
+                        <div>
+                            <p class="text-xl">The Founder of</p>
+                            <div class="mt-4 h-[83px] w-[185px]">
+                                <img src="assets/company-logo.png" alt="Company Logo" class="h-full w-full object-contain" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating social icons -->
+                    <div class="lg:basis-1/2 flex flex-col justify-end">
+                        <div class="relative h-[110px] w-[220px]">
+                            <!-- LinkedIn -->
+                            <a href="#" class="absolute left-0 top-[34px] grid h-15 w-15 place-items-center rounded-[7px] bg-white shadow-soft">
+                                <img src="assets/linkedin.svg" alt="LinkedIn" class="h-9 w-9" />
+                            </a>
+                            <!-- Instagram -->
+                            <a href="#" class="absolute left-[70px] top-[10px] grid h-15 w-15 place-items-center rounded-[7px] bg-white shadow-soft">
+                                <img src="assets/instagram.svg" alt="Instagram" class="h-9 w-9" />
+                            </a>
+                            <!-- YouTube -->
+                            <a href="#" class="absolute left-[140px] top-[50px] grid h-15 w-15 place-items-center rounded-[7px] bg-white shadow-soft">
+                                <img src="assets/youtube.svg" alt="YouTube" class="h-9 w-9" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Center (person image anchor) -->
+                <!-- Center + Right (image + floating cards) -->
+                <div class="relative flex lg:basis-2/3">
+                    <!-- Person image -->
+                    <div class="relative">
+                        <div class="h-[868px] w-[505px]">
+                            <img src="assets/founder-cutout.png" alt="Founder" class="h-full w-full object-contain" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right floating cards -->
+        <div class="absolute inset-0 flex z-10">
+            <div class="">
+                <!-- Top big icon card -->
+                <div class="absolute right-[234px] top-[72px]">
+                    <div class="h-[144px] w-[167px] rounded-[10px] bg-white shadow-soft grid place-items-center mb-5">
+                        <!-- top green pill -->
+                        <span class="absolute -top-[6px] left-1/2 -translate-x-1/2 h-[6px] w-[34px] rounded-full bg-[#3AAB49]"></span>
+                        <img src="assets/people-group.png" alt="Users" class="h-[64px] w-[64px] object-contain" />
+                    </div>
+                    <!-- TRANSFORMED text card (below top card) -->
+                    <div class="h-[60px] w-[167px] rounded-[10px] bg-white shadow-soft flex flex-col items-center justify-center">
+                        <p class="text-xs tracking-wide text-[#171A1C]">TRANSFORMED</p>
+                        <p class="text-[15px] font-bold text-[#171A1C]">2L + Lives</p>
+                    </div>
+                </div>
+        
+                <!-- Right big video icon card -->
+                <div class="absolute right-[25px] top-[200px]">
+                    <div class="h-[144px] w-[167px] rounded-[10px] bg-white shadow-soft grid place-items-center mb-5">
+                        <img src="assets/video-call.png" alt="Video" class="h-[62px] w-[62px] object-contain" />
+                    </div>
+                    <!-- LIVE WEBINARS text card -->
+                    <div class="h-[60px] w-[167px] rounded-[10px] bg-white shadow-soft flex flex-col items-center justify-center">
+                        <p class="text-xs tracking-wide text-[#171A1C]">LIVE WEBINARS</p>
+                        <p class="text-[15px] font-bold text-[#171A1C]">2.5K+</p>
+                    </div>
+                </div>
+        
+                <!-- Lower big certificate icon card -->
+                <div class="absolute right-[150px] top-[463px]">
+                    <div class="h-[144px] w-[167px] rounded-[10px] bg-white shadow-soft grid place-items-center mb-5">
+                        <img src="assets/google-reviews.png" alt="Certificate" class="h-[74px] w-[74px] object-contain" />
+                    </div>
+                    <!-- GOOGLE REVIEWS text card -->
+                    <div class="h-[60px] w-[167px] rounded-[10px] bg-white shadow-soft flex flex-col items-center justify-center">
+                        <p class="text-xs tracking-wide text-[#171A1C]">GOOGLE REVIEWS</p>
+                        <p class="text-[15px] font-bold text-[#171A1C]">4.9&nbsp;&nbsp;with 16K+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="w-full lg:container mx-auto">
+    <div class="relative mx-auto w-full lg:container min-h-180">
+        <div class="absolute inset-0 flex justify-center mt-15">
+            <div class="rounded-full border-l-10 border-t-10 border-[#F3F4F5] w-134 h-134 flex items-center justify-center z-0">
+                <div class="rounded-full border-r-10 border-b-10 border-[#F3F4F5] w-69 h-69 z-0"></div>
+            </div>
+        </div>
+        <div class="absolute inset-0 px-4 sm:px-8 lg:px-18 pt-5 z-0">
+            <!-- Content layer -->
+            <div class="relative z-10 flex flex-col lg:flex-row gap-10">
+                <!-- Left -->
+                <div class="flex w-full lg:basis-1/3 flex-col items-center lg:items-start gap-10">
+                    <div class="lg:basis-1/2 flex flex-col justify-center px-7">
+                        <div>
+                            <p class="text-xl">The Founder of</p>
+                            <div class="mt-4 h-[83px] w-[185px]">
+                                <img src="assets/company-logo.png" alt="Company Logo" class="h-full w-full object-contain" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating social icons -->
+                    <div class="lg:basis-1/2 flex flex-col justify-end">
+                        <div class="relative h-[110px] w-[220px]">
+                            <!-- LinkedIn -->
+                            <a href="#" class="absolute left-0 top-[34px] grid h-15 w-15 place-items-center rounded-[7px] bg-white shadow-soft">
+                                <img src="assets/linkedin.svg" alt="LinkedIn" class="h-9 w-9" />
+                            </a>
+                            <!-- Instagram -->
+                            <a href="#" class="absolute left-[70px] top-[10px] grid h-15 w-15 place-items-center rounded-[7px] bg-white shadow-soft">
+                                <img src="assets/instagram.svg" alt="Instagram" class="h-9 w-9" />
+                            </a>
+                            <!-- YouTube -->
+                            <a href="#" class="absolute left-[140px] top-[50px] grid h-15 w-15 place-items-center rounded-[7px] bg-white shadow-soft">
+                                <img src="assets/youtube.svg" alt="YouTube" class="h-9 w-9" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Center (person image anchor) -->
+                <div class="relative flex lg:basis-2/3">
+                    <div class="relative">
+                        <div class="h-[745px]">
+                            <img src="assets/founder-cutout.png" alt="Founder" class="h-full w-full object-contain" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right floating cards -->
+        <app-floating-cards/>
+    </div>
+</section>

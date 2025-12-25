@@ -1,0 +1,56 @@
+
+<section>
+    <div class="relative min-h-180">
+        <!-- Outer and Inner background circles -->
+        <div class="absolute inset-0 flex justify-center mt-15">
+            <div class="rounded-full border-l-10 border-t-10 border-[#F3F4F5] w-134 h-134 flex items-center justify-center z-0">
+                <div class="rounded-full border-r-10 border-b-10 border-[#F3F4F5] w-69 h-69 z-0"></div>
+            </div>
+        </div>
+        <div class="absolute inset-0 px-4 sm:px-8 lg:px-8 xl:px-18 pt-5 z-0">
+            <!-- Content layer -->
+            <div class="relative z-10 flex flex-col lg:flex-row gap-10">
+                <!-- Left -->
+                <div class="flex w-full lg:basis-1/3 flex-col items-center lg:items-start gap-10">
+                    <div class="lg:basis-1/2 flex flex-col justify-center px-7">
+                        <div>
+                            <p class="text-xl">The Founder of</p>
+                            <div class="mt-4 h-[83px] w-[185px]">
+                                <img src="assets/company-logo.png" alt="Company Logo" class="h-full w-full object-contain" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating social icons -->
+                    <div class="lg:basis-1/2 flex flex-col justify-end">
+                        <div class="relative h-[110px] w-[220px]">
+                            <!-- LinkedIn -->
+                            <a href="#" class="absolute left-0 top-[34px] grid h-15 w-15 place-items-center rounded-[7px] bg-white shadow-soft">
+                                <img src="assets/linkedin.svg" alt="LinkedIn" class="h-9 w-9" />
+                            </a>
+                            <!-- Instagram -->
+                            <a href="#" class="absolute left-[70px] top-[10px] grid h-15 w-15 place-items-center rounded-[7px] bg-white shadow-soft">
+                                <img src="assets/instagram.svg" alt="Instagram" class="h-9 w-9" />
+                            </a>
+                            <!-- YouTube -->
+                            <a href="#" class="absolute left-[140px] top-[50px] grid h-15 w-15 place-items-center rounded-[7px] bg-white shadow-soft">
+                                <img src="assets/youtube.svg" alt="YouTube" class="h-9 w-9" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Center (person image anchor) -->
+                <div class="relative flex lg:basis-2/3">
+                    <div class="relative">
+                        <div class="h-[745px]">
+                            <img src="assets/founder-cutout.png" alt="Founder" class="h-full w-full object-contain" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Right floating cards -->
+        <app-floating-cards/>
+    </div>
+</section>

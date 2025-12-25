@@ -1,0 +1,11 @@
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+/* | Tailwind                | Min Width  | Typical Device               |
+| ----------------------- | ---------- | ---------------------------- |
+| **default (no prefix)** | `< 640px`  | **Mobile**                   |
+| **sm**                  | `≥ 640px`  | Large mobile / small tablet  |
+| **md**                  | `≥ 768px`  | **Tablet**                   |
+| **lg**                  | `≥ 1024px` | **Laptop**                   |
+| **xl**                  | `≥ 1280px` | **Desktop**                  |
+| **2xl**                 | `≥ 1536px` | **Large screens / Monitors** | */
