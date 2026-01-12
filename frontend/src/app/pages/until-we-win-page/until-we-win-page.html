@@ -1,4 +1,3 @@
-
 <section>
     <div class="relative min-h-180">
         <!-- Outer and Inner background circles -->
@@ -9,9 +8,9 @@
         </div>
         <div class="absolute inset-0 px-4 sm:px-8 lg:px-8 xl:px-18 pt-5 z-0">
             <!-- Content layer -->
-            <div class="relative z-10 flex flex-col lg:flex-row">
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-3 items-start">
                 <!-- Left -->
-                <div class="flex w-full lg:basis-1/3 flex-col items-center lg:items-start gap-10">
+                <div class="relative flex flex-col items-center lg:items-start gap-10">
                     <div class="lg:basis-1/2 px-7">
                         <div class="absolute top-[150px]">
                             <p class="text-xl">The Founder of</p>
@@ -39,18 +38,20 @@
                         </div>
                     </div>
                 </div>
-            
-                <!-- Center (person image anchor) -->
-                <div class="relative flex lg:basis-2/3">
-                    <div class="relative">
-                        <div class="h-[745px]">
-                            <img src="assets/founder-cutout.png" alt="Founder" class="h-full w-full object-contain" />
-                        </div>
+
+                <!-- Center (cutout image centered) -->
+                <div class="flex justify-center">
+                    <div class="h-[745px] flex justify-center">
+                        <img src="assets/founder-cutout.png" alt="Founder" class="h-full object-contain" />
                     </div>
                 </div>
+
+                <!-- Right (empty placeholder for now to keep center truly centered) -->
+                <div class="hidden lg:block"></div>
             </div>
         </div>
+
         <!-- Right floating cards -->
-        <app-floating-cards/>
+        <app-floating-cards />
     </div>
 </section>
